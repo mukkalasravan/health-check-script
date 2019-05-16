@@ -1,0 +1,121 @@
+************************************ Health Status Report ************************************
+
+Operating System Details
+-------------------------------------
+Hostname : puppet-master
+Operating System : CentOS Linux release 7.6.1810 (AltArch)
+Kernel Version : 3.10.0-693.5.2.el7.centos.plus.i686
+OS Architecture : 64 Bit OS
+System Uptime : up by 10:51 hours
+Current System Date & Time : Thu 16 May 2019 11:25:10 AM EDT
+
+Checking For Read-only File System[s]
+-------------------------------------
+.....No read-only file system[s] found. 
+
+
+Checking For Currently Mounted File System[s]
+--------------------------------------------------------------------------
+/dev/mapper/vg00-lv_root  on  /      type  ext4  (rw,relatime,data=ordered)
+/dev/sda1                 on  /boot  type  ext4  (rw,relatime,data=ordered)
+
+
+Checking For Disk Usage On Mounted File System[s]
+--------------------------------------------------------------------------
+( 0-90% = OK/HEALTHY, 90-95% = WARNING, 95-100% = CRITICAL )
+--------------------------------------------------------------------------
+Mounted File System[s] Utilization (Percentage Used):
+
+/dev/mapper/vg00-lv_root  /      6%   ------------------Good/Healthy
+/dev/sda1                 /boot  19%  ------------------Good/Healthy
+
+
+Checking For Zombie Processes
+-------------------------------------
+No zombie processes found on the system.
+
+
+Checking For INode Usage
+--------------------------------------------------------------------------
+( 0-90% = OK/HEALTHY, 90-95% = WARNING, 95-100% = CRITICAL )
+--------------------------------------------------------------------------
+INode Utilization (Percentage Used):
+
+/dev/sda1                 /boot  1%  ------------------Good/Healthy
+/dev/mapper/vg00-lv_root  /      4%  ------------------Good/Healthy
+
+
+Checking Memory Usage Details
+-------------------------------------
+Total RAM (/proc/meminfo) : 496.496 MB OR 0.484859 GB
+Used RAM in MB : 50, in GB : 0.0488281
+Free RAM in MB : 58.625 , in GB : 0.057251
+
+
+Checking SWAP Details
+-------------------------------------
+Total Swap Memory in MB : 3072, in GB : 3
+Swap Free Memory in MB : 3069.14, in GB : 2.9972
+
+
+Checking For Processor Utilization
+-------------------------------------
+Manufacturer: 
+Processor Model: 
+No. Of Processor(s) : 1
+No. of Core(s) per processor : 1
+
+Current Processor Utilization Summary :
+
+11:25:11 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:25:11 AM  all    0.94    0.00    2.47    3.67    0.00    0.32    0.00    0.00    0.00   92.61
+
+
+Checking For Load Average
+-------------------------------------
+Current Load Average : 0.37, 0.13, 0.08
+
+
+Most Recent 3 Reboot Events
+--------------------------------------------------------------------------
+reboot   system boot  3.10.0-693.5.2.e Thu May 16 00:34 - 11:25  (10:50)    
+reboot   system boot  3.10.0-693.5.2.e Wed May 15 23:55 - 00:33  (00:38)    
+reboot   system boot  3.10.0-693.5.2.e Wed May 15 23:25 - 23:54  (00:28)    
+
+
+Most Recent 3 Shutdown Events
+--------------------------------------------------------------------------
+shutdown system down  3.10.0-693.5.2.e Thu May 16 00:33 - 00:34  (00:00)    
+shutdown system down  3.10.0-693.5.2.e Wed May 15 23:54 - 23:55  (00:00)    
+
+
+Top 5 Memory Resource Hog Processes
+--------------------------------------------------------------------------
+%MEM %CPU   PID  PPID USER     STAT COMMAND
+
+ 1.6  0.0 18398     1 root     Ssl  /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+
+ 1.4  0.0   631   578 root     S    /sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
+
+ 0.8  0.0  6887   578 root     S    /sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-eth1.pid -lf /var/lib/NetworkManager/dhclient-9c92fad9-6ecb-3e6c-eb4d-8a47c6f50c04-eth1.lease -cf /var/lib/NetworkManager/dhclient-eth1.conf eth1
+
+ 0.8  0.0 18388     1 polkitd  Ssl  /usr/lib/polkit-1/polkitd --no-debug
+
+ 0.7  0.0   578     1 root     Ssl  /usr/sbin/NetworkManager --no-daemon
+
+
+
+Top 5 CPU Resource Hog Processes
+--------------------------------------------------------------------------
+%CPU %MEM   PID  PPID USER     STAT COMMAND
+
+ 4.5  0.2  7328  1235 root     S+   sh health-check.sh
+
+ 0.1  0.0   289     2 root     S<   [kworker/0:1H]
+
+ 0.1  0.0    21     2 root     S    [kswapd0]
+
+ 0.0  1.6 18398     1 root     Ssl  /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+
+ 0.0  1.4   631   578 root     S    /sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
+
